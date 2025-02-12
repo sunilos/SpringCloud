@@ -1,0 +1,11 @@
+INDEX VERSION 1.4+D:\Rays\Workspace\spring-cloud\spring-cloud-case-study\01. spring-cloud-basics\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1381391042.index
+2037651304.index
+2227838403.index
+2307296053.index
+1050042363.index
+2851180925.index
+3137240624.index
+821608647.index
+3120250875.index
+1848666372.index
