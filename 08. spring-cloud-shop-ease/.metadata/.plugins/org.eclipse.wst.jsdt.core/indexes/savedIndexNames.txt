@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Rays\Workspace\spring-cloud-sawan\01. spring-cloud-shop-ease\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3120250875.index
+1758445889.index
+1118982603.index
+3693709918.index
+2227838403.index
+1050042363.index
+715374721.index

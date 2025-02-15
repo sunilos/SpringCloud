@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+D:\Rays\Workspace\spring-cloud-sawan\01. spring-cloud-shop-ease\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\282544235.index
+\notification-service\src\main\java
+D:\Rays\Workspace\spring-cloud-sawan\01. spring-cloud-shop-ease\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1280491421.index
+\order-service\src\main\java
+D:\Rays\Workspace\spring-cloud-sawan\01. spring-cloud-shop-ease\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4241704351.index
+\inventory-service\src\main\java
+D:\Rays\Workspace\spring-cloud-sawan\01. spring-cloud-shop-ease\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2328662910.index
+\payment-service\src\main\java

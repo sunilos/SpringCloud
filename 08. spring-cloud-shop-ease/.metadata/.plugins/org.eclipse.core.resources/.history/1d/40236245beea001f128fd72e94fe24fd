@@ -1,0 +1,45 @@
+package com.rays.mail;
+
+import java.io.File;
+import java.util.List;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailService {
+
+	@Autowired
+	private JavaMailSender emailSender;
+
+	public void sendEmail(String to, String subject, String body, boolean isHtml, List<String> attachments) {
+		try {
+			MimeMessage message = emailSender.createMimeMessage();
+			MimeMessageHelper helper = new MimeMessageHelper(message, true);
+
+			helper.setTo(to);
+			helper.setSubject(subject);
+			helper.setText(body, isHtml);
+
+			// Attach files
+			if (attachments != null) {
+				for (String filePath : attachments) {
+					FileSystemResource file = new FileSystemResource(new File(filePath));
+					helper.addAttachment(file.getFilename(), file);
+				}
+			}
+
+			// Send email asynchronously
+			new Thread(() -> emailSender.send(message)).start();
+
+		} catch (MessagingException e) {
+			e.printStackTrace();
+		}
+	}
+}

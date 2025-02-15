@@ -1,0 +1,16 @@
+package com.rays.kafka;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+import com.rays.details.OrderDetails;
+
+@Service
+public class KafkaConsumer {
+
+	@KafkaListener(topics = "order-topic", groupId = "email-group")
+	public void receiveOrderDetails(OrderDetails orderDetails) {
+		System.out.println("items = " + orderDetails.getItems());
+		System.out.println("email = " + orderDetails.getEmail());
+	}
+}

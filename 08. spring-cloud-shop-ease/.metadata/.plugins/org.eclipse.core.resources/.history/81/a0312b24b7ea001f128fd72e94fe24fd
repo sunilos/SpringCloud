@@ -1,0 +1,9 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /order-service
+spring:
+  application:
+    name: order-service
+  config:
+    import: configserver:http://localhost:8888

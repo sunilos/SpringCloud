@@ -1,0 +1,10 @@
+package com.rays.details;
+
+import java.io.Serializable;
+
+public class OrderDetails implements Serializable {
+
+	private String items;
+	private String email;
+
+}
