@@ -8,4 +8,10 @@ spring:
       server:
         git:
           uri: https://github.com/SawanPanwar/Spring-Cloud-Config.git
-          clone-on-start: true
+          clone-on-start: true     
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true      
