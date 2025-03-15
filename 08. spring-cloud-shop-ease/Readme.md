@@ -11,5 +11,5 @@ This document provides an overview of the running microservices along with their
 | **INVENTORY-SERVICE** |  inventory-service    |8081     |
 | **ORDER-SERVICE**     |  order-service        |8083         |
 | **PAYMENT-SERVICE**   |  payment-service       |8082       |
-| **NOTIFICATION-SERVICE**   |  notification-service       |8082       |
+| **NOTIFICATION-SERVICE**   |  notification-service       |8084       |
 
