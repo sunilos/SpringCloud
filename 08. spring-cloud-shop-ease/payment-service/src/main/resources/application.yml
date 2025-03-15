@@ -1,9 +1,14 @@
+# Server configuration
 server:
-  port: 8082
+  port: 8082  # Defines the port on which the payment-service will run
   servlet:
-    context-path: /payment-service
+    context-path: /payment-service  # Base path for accessing the service
+
+# Spring application configuration
 spring:
   application:
-    name: payment-service
+    name: payment-service  # Name of the microservice (used for service discovery)
+
+  # Spring Cloud Config Server
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://localhost:8888  # Fetches configurations from the Config Server running on port 8888
