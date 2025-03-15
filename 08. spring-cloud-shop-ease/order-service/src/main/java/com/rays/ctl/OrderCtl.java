@@ -1,6 +1,7 @@
 package com.rays.ctl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,12 @@ public class OrderCtl {
 
 	@Autowired
 	KafkaProducer producer;
+	
+	@GetMapping
+	public String get() {
+		return  this.getClass().getName() +  ": I am fit and fine, and I am running.";
+	}
+	
 
 	@PostMapping("/placeOrder")
 	public String placeOrder(@RequestBody OrderDetails orderDetails) {

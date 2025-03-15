@@ -1,9 +1,14 @@
+# Server Configuration
 server:
-  port: 8081
+  port: 8081  # Defines the port on which the inventory-service will run
   servlet:
-    context-path: /inventory-service
+    context-path: /inventory-service  # Base path for accessing the service
+
+# Spring Application Configuration
 spring:
   application:
-    name: inventory-service
+    name: inventory-service  # Name of the microservice (used for service discovery and configuration)
+
+  # Spring Cloud Config Server Configuration
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://localhost:8888  # Fetches configurations from the Config Server running on port 8888
