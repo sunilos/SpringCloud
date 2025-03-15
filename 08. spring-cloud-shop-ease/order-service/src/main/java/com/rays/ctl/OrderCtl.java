@@ -13,7 +13,7 @@ import com.rays.feign.PaymentServiceFeignClient;
 import com.rays.kafka.KafkaProducer;
 
 @RestController
-@RequestMapping(value = "OrderCtl")
+@RequestMapping(value = {"OrderCtl","ctl/order"})
 public class OrderCtl {
 
 	@Autowired

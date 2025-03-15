@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @version 1.0
  * @since 2025-03-15
  */
-@FeignClient(name = "payment-service", url = "http://localhost:8082")
+@FeignClient(name = "payment-service")
 public interface PaymentServiceFeignClient {
 
     /**
@@ -30,6 +30,6 @@ public interface PaymentServiceFeignClient {
      * @param amt The amount to be paid.
      * @return The updated balance or payment confirmation.
      */
-    @PostMapping("/payment-service/PaymentCtl/makePayment")
+	@PostMapping("/ctl/payment/makePayment")
     double makePayment(@RequestParam("amt") double amt);
 }

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * This RESTful API allows users to make payments and check service status.
  */
 @RestController
-@RequestMapping(value = "PaymentCtl")
+@RequestMapping(value = { "PaymentCtl","ctl/payment"})
 public class PaymentCtl {
 
     /**

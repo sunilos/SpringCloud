@@ -9,4 +9,10 @@ spring:
   config:
     import: configserver:http://localhost:8888
   
+      logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.http.server.reactive: DEBUG
       

@@ -1,8 +1,6 @@
 # Server configuration
 server:
   port: 8082  # Defines the port on which the payment-service will run
-  servlet:
-    context-path: /payment-service  # Base path for accessing the service
 
 # Spring application configuration
 spring:
