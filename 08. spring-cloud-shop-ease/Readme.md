@@ -4,7 +4,7 @@ This document provides an overview of the running microservices along with their
 
 ### Service Status Table
 
-| **Service Name**      |  **Host & Port**                       |  **Port**  |
+| **Service Name**      |  **Context Path**                       |  **Port**  |
 | --------------------- |  ------------------------------------- |-------- |
 | **DICOVERY Server**   |  discovery-server      |8761      |
 | **CONFIG-SERVER**     |  config-server        |8888         |
