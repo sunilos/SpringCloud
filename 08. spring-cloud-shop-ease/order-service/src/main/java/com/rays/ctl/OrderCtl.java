@@ -36,13 +36,13 @@ public class OrderCtl {
 
 		int price = 10;
 
-		int items = orderDetails.getItems();
+		int quantity = orderDetails.getItems();
 
-		double totalAmount = items * price;
+		double totalAmount = quantity * price;
 
 		double updatedBalance = paymentService.makePayment(totalAmount);
 
-		int updatedStock = inventoryService.sold(items);
+		int updatedStock = inventoryService.sold(quantity);
 
 		System.out.println("Tickets are Booked");
 		System.out.println("Total Amount Paid: " + totalAmount);
@@ -52,7 +52,7 @@ public class OrderCtl {
 		String message = "Tickets are Booked | Total Amount Paid: " + totalAmount + " | Remaining Balance: "
 				+ updatedBalance + " | Updated Stock: " + updatedStock;
 
-		producer.sendDetails(orderDetails);
+		//producer.sendDetails(orderDetails);
 
 		return message;
 	}

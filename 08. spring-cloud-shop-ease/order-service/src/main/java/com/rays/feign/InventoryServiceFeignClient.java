@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @version 1.0
  * @since 2025-03-15
  */
-@FeignClient(name = "inventory-service", url = "http://localhost:8081")
+@FeignClient(name = "inventory-service") //discovery server registered name
 public interface InventoryServiceFeignClient {
 
     /**
@@ -30,6 +30,6 @@ public interface InventoryServiceFeignClient {
      * @param qty The quantity of items to be marked as sold.
      * @return The updated inventory count after the operation.
      */
-    @PostMapping("/inventory-service/InventoryCtl/sold")
-    int sold(@RequestParam("qty") int qty);
+	@PostMapping("/ctl/inventory/sold")
+    int sold(@RequestParam int qty);
 }
