@@ -1,7 +1,6 @@
 server:
   port: 8083
-  servlet:
-    context-path: /order-service
+
 spring:
   application:
     name: order-service
@@ -9,7 +8,7 @@ spring:
     import: configserver:http://localhost:8888
   kafka:
     producer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: localhost:8084
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:

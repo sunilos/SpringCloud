@@ -7,5 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/SawanPanwar/Spring-Cloud-Config.git
-          clone-on-start: true
+          uri: https://github.com/sunilos/SpringCloud.git
+          search-paths: config          
+          clone-on-start: true     

@@ -17,7 +17,9 @@ public class GatewayConfig {
 
 	@Bean
 	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-		return builder.routes().route("order-service", r -> r.path("/order-service/**").uri("lb://order-service"))
+		return builder.routes().route("order-service", r -> r.path("/order-service/**")
+	            .filters(f -> f.rewritePath("/order-service/(?<segment>.*)", "/${segment}")) // Rewrite path
+	            .uri("lb://ORDER-SERVICE"))
 				.route("inventory-service", r -> r.path("/inventory-service/**").uri("lb://inventory-service"))
 				.route("payment-service", r -> r.path("/payment-service/**").uri("lb://payment-service")).build();
 	}
