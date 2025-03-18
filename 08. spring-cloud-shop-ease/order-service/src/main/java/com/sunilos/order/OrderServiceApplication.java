@@ -1,4 +1,4 @@
-package com.rays;
+package com.sunilos.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -33,7 +33,7 @@ public class OrderServiceApplication {
      *
      * @param args Command-line arguments passed during application startup.
      */
-    public static void main(String[] args) {
-        SpringApplication.run(OrderServiceApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(OrderServiceApplication.class, args);
+	}
 }

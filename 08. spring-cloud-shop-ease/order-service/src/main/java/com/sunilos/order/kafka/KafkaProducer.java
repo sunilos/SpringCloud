@@ -1,10 +1,10 @@
-package com.rays.kafka;
+package com.sunilos.order.kafka;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.rays.details.OrderDetails;
+import com.sunilos.order.details.OrderDetails;
 
 @Service
 public class KafkaProducer {

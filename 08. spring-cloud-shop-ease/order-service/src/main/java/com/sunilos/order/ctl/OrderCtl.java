@@ -1,4 +1,4 @@
-package com.rays.ctl;
+package com.sunilos.order.ctl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rays.details.OrderDetails;
-import com.rays.feign.InventoryServiceFeignClient;
-import com.rays.feign.PaymentServiceFeignClient;
-import com.rays.kafka.KafkaProducer;
+import com.sunilos.order.details.OrderDetails;
+import com.sunilos.order.feign.InventoryServiceFeignClient;
+import com.sunilos.order.feign.PaymentServiceFeignClient;
+import com.sunilos.order.kafka.KafkaProducer;
 
 @RestController
 @RequestMapping(value = {"OrderCtl","ctl/order"})

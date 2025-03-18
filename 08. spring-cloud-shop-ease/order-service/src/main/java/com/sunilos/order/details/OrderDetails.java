@@ -1,4 +1,4 @@
-package com.rays.details;
+package com.sunilos.order.details;
 
 import java.io.Serializable;
 
