@@ -1,4 +1,4 @@
-package com.rays.config;
+package com.sunilos.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -29,10 +29,10 @@ public class ConfigServerApplication {
      * 
      * @param args command-line arguments passed during application startup
      */
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        SpringApplication.run(ConfigServerApplication.class, args);
+		SpringApplication.run(ConfigServerApplication.class, args);
 
-    }
+	}
 
 }
