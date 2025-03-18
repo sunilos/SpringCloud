@@ -1,4 +1,4 @@
-package com.rays.ctl;
+package com.sunilos.payment.ctl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ public class PaymentCtl {
     /**
      * The initial balance, default value set to 100.
      */
-	@Value(value = "100")
+    @Value(value = "100")
     private double balance;
 
     /**
@@ -27,11 +27,11 @@ public class PaymentCtl {
      * @param amt The amount to be deducted from the balance.
      * @return The updated balance after the payment.
      */
-	@PostMapping("makePayment")
-	public double makePayment(@RequestParam double amt) {
+    @PostMapping("makePayment")
+    public double makePayment(@RequestParam double amt) {
         balance -= amt;
-		return balance;
-	}
+        return balance;
+    }
 
     /**
      * Health check endpoint to verify if the service is running.

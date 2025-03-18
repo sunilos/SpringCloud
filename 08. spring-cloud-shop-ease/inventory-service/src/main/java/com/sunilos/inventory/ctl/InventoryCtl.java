@@ -1,4 +1,4 @@
-package com.rays.ctl;
+package com.sunilos.inventory.ctl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class InventoryCtl {
      * Represents the available stock quantity. 
      * Default stock is set to 100.
      */
-	@Value(value = "100")
+    @Value(value = "100")
     private int stock;
 
     /**
@@ -28,11 +28,11 @@ public class InventoryCtl {
      * @param qty The quantity of items sold.
      * @return The updated stock after the sale.
      */
-	@PostMapping("sold")
-	public int sold(@RequestParam int qty) {
-		stock -= qty;
-		return stock;
-	}
+    @PostMapping("sold")
+    public int sold(@RequestParam int qty) {
+        stock -= qty;
+        return stock;
+    }
 
     /**
      * Health check endpoint to verify if the service is running.
