@@ -43,4 +43,14 @@ public class InventoryCtl {
     public String get() {
         return this.getClass().getName() + ": I am fit and fine, and I am running.";
     }
+
+    /**
+	 * Check the stock
+	 * 
+	 * @return
+	 */
+	@GetMapping("/check")
+	public int checkStock() {
+		return stock;
+	}
 }
