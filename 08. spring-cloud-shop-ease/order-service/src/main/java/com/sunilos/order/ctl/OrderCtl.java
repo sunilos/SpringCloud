@@ -13,7 +13,7 @@ import com.sunilos.order.feign.PaymentServiceFeignClient;
 import com.sunilos.order.kafka.KafkaProducer;
 
 @RestController
-@RequestMapping(value = {"OrderCtl","ctl/order"})
+@RequestMapping(value = {"ctl/order"})
 public class OrderCtl {
 
 	@Autowired
