@@ -112,8 +112,9 @@ logging:
 
 4. Test endpoints like:
    ```
-   http://localhost:8080/order-service/orders
-   http://localhost:8080/payment-service/pay
+   http://localhost:8080/inventory-service/ctl/inventory
+   http://localhost:8080/payment-service/ctl/payment
+   http://localhost:8080/order-service/ctl/orders
    ```
 
 ---
