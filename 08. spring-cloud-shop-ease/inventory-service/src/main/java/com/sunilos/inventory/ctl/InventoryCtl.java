@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * This RESTful API allows users to manage stock by updating inventory when items are sold.
  */
 @RestController
-@RequestMapping(value = {"InventoryCtl","ctl/inventory"})
+@RequestMapping(value = {"ctl/inventory"})
 public class InventoryCtl {
 
     /**
