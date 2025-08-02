@@ -1,4 +1,5 @@
-# **Spring Cloud Config Server Configuration Explanation**
+# **application.yml**
+## **Spring Cloud Config Server Configuration Explanation**
 
 The given configuration sets up a **Spring Cloud Config Server**, which is responsible for managing external configurations for distributed systems.
 
