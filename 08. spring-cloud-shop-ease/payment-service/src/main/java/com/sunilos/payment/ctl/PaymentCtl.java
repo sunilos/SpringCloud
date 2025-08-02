@@ -42,4 +42,13 @@ public class PaymentCtl {
     public String get() {
         return this.getClass().getName() + ": I am fit and fine, and I am running.";
     }
+
+    /**
+	 * Check the balance
+	 * @return
+	 */
+	@GetMapping("check")
+	public double checkBalance() {
+		return balance;
+	}
 }
