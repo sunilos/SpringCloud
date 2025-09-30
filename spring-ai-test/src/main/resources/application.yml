@@ -1,0 +1,10 @@
+spring:
+  ai:
+    openai:
+      api-key: put_here_secret_api_key
+      base-url: https://api.groq.com/openai
+      chat:
+        options:
+          model: openai/gpt-oss-20b
+server:
+  port: 8080
